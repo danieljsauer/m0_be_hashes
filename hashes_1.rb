@@ -1,5 +1,5 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,23 +7,23 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+foods[:bananas] = 10 
+p foods 
 
 
 #-------------------
@@ -37,16 +37,25 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+email1 = {
+  sender: "Tom",
+  reciepient: "Dan",
+  subject: "OBR",
+  content: "The Rockies lost again",
+  timestamp: "May 3, 2023 2:23PM",
+}
+
 # Write code that prints your email hash to the terminal.
 
+p email1
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email1.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email1.values
 
 
 #-------------------
@@ -62,9 +71,9 @@ p zoo
 posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"]
 
 
-# An Array of Hashes is probably more realistic. Hashes are a data type that's great
-# for storing more complex data. Below, we can store multiple key-value pairs
-# that relate to each individual Instagram post:
+# # An Array of Hashes is probably more realistic. Hashes are a data type that's great
+# # for storing more complex data. Below, we can store multiple key-value pairs
+# # that relate to each individual Instagram post:
 
 
 posts = [
@@ -97,3 +106,33 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    sender: "Tom",
+    reciepient: "Dan",
+    subject: "OBR",
+    content: "The Rockies lost again",
+    timestamp: "May 3, 2023 2:23PM",
+  },
+
+  {
+    sender: "Globo Gym",
+    reciepient: "Dan",
+    subject: "JOIN NOW",
+    content: "AT GLOBO GYM WE ARE BETTER THAN YOU AND WE KNOW IT! SIGN UP NOW!",
+    timestamp: "April 13, 2009 5:00AM" 
+  },
+  {
+    sender: "Chad Bank",
+    reciepient: "Dan",
+    subject: "Payment Processed",
+    content: "Thank you for your recent payment, it will be posted tomorrow.",
+    timestamp: "May 2, 2023 11:23PM"
+  }
+]
+
+p emails
+p emails[0]
+p emails[1].keys
+p emails[2].values
